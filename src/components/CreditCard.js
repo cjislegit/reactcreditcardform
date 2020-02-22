@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CreditCard = () => {
-    return (  );
-}
- 
+  return <div style={{ background: 'red' }}></div>;
+};
+
 export default CreditCard;
