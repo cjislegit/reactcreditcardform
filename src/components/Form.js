@@ -2,7 +2,7 @@ import React from 'react';
 
 const Form = () => {
   return (
-    <form style={{ background: 'red' }}>
+    <form style={{ background: 'white', height: '500px' }}>
       <input type='text' />
       <input type='text' />
       <select>
