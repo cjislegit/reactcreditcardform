@@ -45,7 +45,7 @@ const Form = () => {
           <label for='CVV'>CVV</label>
         </div>
         <input id='CVV' type='text' />
-        <input type='button' value='Submit' />
+        <button>Submit</button>
       </form>
     </div>
   );
