@@ -13,8 +13,29 @@ code {
     monospace;
 }
 
+form {
+  grid-row-start: 2;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 100%;
+}
+
+input[type='text'] {
+  border-radius: 5px;
+  border: solid 1px #cdd6e0;
+  width: 80%;
+  height: 50px;
+  box-sizing: border-box;
+}
+
 .App {
-  max-width: 400px;
+  max-width: 500px;
   margin: 30px auto;
   text-align: center;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-rows: 30% 70%;
 }
