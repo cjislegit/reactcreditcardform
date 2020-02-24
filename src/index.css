@@ -70,7 +70,21 @@ select {
   grid-template-rows: 30% 70%;
 }
 
-.expirationDateContainer {
+.rowContainer {
   display: grid;
-  grid-template-columns: 25% 25% 20%;
+  width: 100%;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 20px auto;
+}
+
+.monthSelector {
+  grid-column-start: 1;
+}
+.yearSelector {
+  grid-column-start: 2;
+}
+
+label[for='CVV'] {
+  grid-column-start: 3;
+  grid-row-start: 1;
 }
