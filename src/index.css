@@ -96,3 +96,16 @@ label[for='CVV'] {
 .rowContainer input {
   grid-column-start: 4;
 }
+
+.creditCardContainer {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.creditCard {
+  width: 430px;
+  height: 270px;
+  border-radius: 10px;
+  background-image: url('../src/assets/1.jpeg');
+}
