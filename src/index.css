@@ -49,6 +49,7 @@ input[type='text'] {
   width: 100%;
   height: 50px;
   box-sizing: border-box;
+  font-size: 18px;
 }
 
 select {
@@ -80,9 +81,11 @@ select {
 
 .monthSelector {
   grid-column-start: 1;
+  font-size: 18px;
 }
 .yearSelector {
   grid-column-start: 2;
+  font-size: 18px;
 }
 
 label[for='CVV'] {
