@@ -108,4 +108,6 @@ label[for='CVV'] {
   height: 270px;
   border-radius: 10px;
   background-image: url('../src/assets/1.jpeg');
+  position: relative;
+  top: 100px;
 }
