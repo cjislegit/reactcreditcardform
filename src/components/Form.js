@@ -2,10 +2,7 @@ import React from 'react';
 
 const Form = () => {
   return (
-    <div
-      className='formContainer'
-      style={{ background: 'white', height: '500px' }}
-    >
+    <div className='formContainer'>
       <form>
         <label for='Card Number'>Card Number</label>
         <input id='Card Number' type='text' />
