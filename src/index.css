@@ -118,7 +118,8 @@ label[for='CVV'] {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: auto auto;
-  align-content: space-between;
+  align-content: space-around;
+  justify-content: space-around;
 }
 
 .chipContainer {
@@ -133,6 +134,7 @@ label[for='CVV'] {
   background-size: contain;
   width: 85px;
   height: 45px;
+  justify-self: end;
 }
 
 .numContainer {
@@ -148,4 +150,10 @@ label[for='CVV'] {
 
 .expdateContainer {
   font-size: 18px;
+}
+
+div span {
+  font-size: 13px;
+  display: block;
+  opacity: 0.7;
 }
