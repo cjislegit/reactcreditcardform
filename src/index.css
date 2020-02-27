@@ -134,3 +134,18 @@ label[for='CVV'] {
   width: 85px;
   height: 45px;
 }
+
+.numContainer {
+  font-size: 27px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.nameContainer {
+  font-size: 18px;
+  grid-column-start: 1;
+}
+
+.expdateContainer {
+  font-size: 18px;
+}
