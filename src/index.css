@@ -104,7 +104,9 @@ label[for='CVV'] {
 }
 
 .creditCardContainer {
-  width: 570px;
+  width: 100vw;
+  max-width: 570px;
+  min-width: 400px;
   display: flex;
   justify-content: center;
 }
