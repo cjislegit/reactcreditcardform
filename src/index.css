@@ -109,6 +109,7 @@ label[for='CVV'] {
   min-width: 400px;
   display: flex;
   justify-content: center;
+  height: 130px;
 }
 
 .creditCard {
@@ -117,7 +118,7 @@ label[for='CVV'] {
   border-radius: 10px;
   background-image: url('../src/assets/1.jpeg');
   position: relative;
-  top: 130px;
+  top: 1px;
   box-shadow: 0 20px 60px 0 rgba(14, 42, 90, 0.55);
   display: grid;
   grid-template-rows: auto auto auto;
