@@ -70,7 +70,9 @@ select {
   background-color: white;
   display: grid;
   grid-template-rows: 30% 70%;
-  width: 570px;
+  width: 100vw;
+  max-width: 570px;
+  min-width: 400px;
   height: 557px;
   border-radius: 10px;
 }
