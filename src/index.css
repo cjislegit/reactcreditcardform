@@ -146,10 +146,12 @@ label[for='CVV'] {
 .nameContainer {
   font-size: 18px;
   grid-column-start: 1;
+  text-align: left;
 }
 
 .expdateContainer {
   font-size: 18px;
+  text-align: left;
 }
 
 div span {
