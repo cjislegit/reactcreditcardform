@@ -4,15 +4,17 @@ export const CreditCardContext = createContext();
 
 const CreditCardContextProvider = props => {
   const [creditCardInfo, setCreditCardInfo] = useState({
-    cardNuber: '',
-    cardHolder: '',
-    expirationMonth: '',
-    exiprationYear: '',
+    cardNumber: '#### #### #### ####',
+    cardHolder: 'FULL NAME',
+    expirationMonth: 'MM',
+    exiprationYear: 'YY',
     cvv: ''
   });
 
   return (
-    <CreditCardContext.Provider value={{ ...createContext, setCreditCardInfo }}>
+    <CreditCardContext.Provider
+      value={{ ...creditCardInfo, setCreditCardInfo }}
+    >
       {props.children}
     </CreditCardContext.Provider>
   );
