@@ -9,10 +9,14 @@ const Form = () => {
         <label for='cardNumber'>Card Number</label>
         <input id='cardNumber' type='text' onChange={handleChange} />
         <label for='cardHolder'>Card Holder</label>
-        <input id='cardHolder' type='text' />
+        <input id='cardHolder' type='text' onChange={handleChange} />
         <div className='rowContainer'>
           <label>Expiration Date</label>
-          <select className='monthSelector'>
+          <select
+            id='expirationMonth'
+            className='monthSelector'
+            onChange={handleChange}
+          >
             <option value=''>Month</option>
             <option value='01'>01</option>
             <option value='02'>02</option>
@@ -27,7 +31,11 @@ const Form = () => {
             <option value='11'>11</option>
             <option value='12'>12</option>
           </select>
-          <select className='yearSelector'>
+          <select
+            id='exiprationYear'
+            className='yearSelector'
+            onChange={handleChange}
+          >
             <option value=''>Year</option>
             <option value='2020'>2020</option>
             <option value='2021'>2021</option>
