@@ -7,7 +7,12 @@ const Form = () => {
     <div className='formContainer'>
       <form>
         <label for='cardNumber'>Card Number</label>
-        <input id='cardNumber' type='text' onChange={handleChange} />
+        <input
+          id='cardNumber'
+          type='text'
+          onChange={handleChange}
+          maxlength='16'
+        />
         <label for='cardHolder'>Card Holder</label>
         <input id='cardHolder' type='text' onChange={handleChange} />
         <div className='rowContainer'>
