@@ -11,9 +11,17 @@ const CreditCardContextProvider = props => {
     cvv: ''
   });
 
+  const handleChange = e => {
+    const name = e.target.id;
+    const value = e.target.value;
+    const newState = { ...creditCardInfo };
+    newState[name] = value;
+    setCreditCardInfo(newState);
+  };
+
   return (
     <CreditCardContext.Provider
-      value={{ ...creditCardInfo, setCreditCardInfo }}
+      value={{ ...creditCardInfo, setCreditCardInfo, handleChange }}
     >
       {props.children}
     </CreditCardContext.Provider>

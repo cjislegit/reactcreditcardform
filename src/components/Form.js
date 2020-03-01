@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CreditCardContext } from '../context/CreditCardContext';
 
 const Form = () => {
+  const { handleChange } = useContext(CreditCardContext);
   return (
     <div className='formContainer'>
       <form>
-        <label for='Card Number'>Card Number</label>
-        <input id='Card Number' type='text' />
-        <label for='Card Holder'>Card Holder</label>
-        <input id='Card Holder' type='text' />
+        <label for='cardNumber'>Card Number</label>
+        <input id='cardNumber' type='text' onChange={handleChange} />
+        <label for='cardHolder'>Card Holder</label>
+        <input id='cardHolder' type='text' />
         <div className='rowContainer'>
           <label>Expiration Date</label>
           <select className='monthSelector'>
