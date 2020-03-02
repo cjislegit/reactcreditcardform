@@ -146,6 +146,9 @@ label[for='CVV'] {
   font-size: 27px;
   grid-column-start: 1;
   grid-column-end: 3;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  min-width: 320px;
 }
 
 .nameContainer {
