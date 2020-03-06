@@ -21,10 +21,30 @@ const CreditCard = () => {
         <div className='chipContainer'></div>
         <div className='logoContainer'></div>
         <div className='numContainer'>
-          <div>{firstSet}</div>
-          <div>{secondSet}</div>
-          <div>{thridSet}</div>
-          <div>{fourthSet}</div>
+          <div>
+            <span className='upanimation'>{firstSet[0]}</span>
+            <span>{firstSet[1]}</span>
+            <span>{firstSet[2]}</span>
+            <span>{firstSet[3]}</span>
+          </div>
+          <div>
+            <span>{secondSet[0]}</span>
+            <span>{secondSet[1]}</span>
+            <span>{secondSet[2]}</span>
+            <span>{secondSet[3]}</span>
+          </div>
+          <div>
+            <span>{thridSet[0]}</span>
+            <span>{thridSet[1]}</span>
+            <span>{thridSet[2]}</span>
+            <span>{thridSet[3]}</span>
+          </div>
+          <div>
+            <span>{fourthSet[0]}</span>
+            <span>{fourthSet[1]}</span>
+            <span>{fourthSet[2]}</span>
+            <span>{fourthSet[3]}</span>
+          </div>
         </div>
         <div className='nameContainer'>
           <span>Card Holder</span>
