@@ -12,8 +12,16 @@ const CreditCard = () => {
 
   const firstSet = cardNumber.substring(0, 4);
   const secondSet = cardNumber.substring(4, 8);
-  const thridSet = cardNumber.substring(8, 12);
+  const thirdSet = cardNumber.substring(8, 12);
   const fourthSet = cardNumber.substring(12, 16);
+
+  const checkInputSecure = i => {
+    if (i === undefined || i === '#') {
+      return '#';
+    } else {
+      return '*';
+    }
+  };
 
   return (
     <div className='creditCardContainer'>
@@ -22,28 +30,31 @@ const CreditCard = () => {
         <div className='logoContainer'></div>
         <div className='numContainer'>
           <div>
-            <span className='upanimation'>{firstSet[0]}</span>
-            <span>{firstSet[1]}</span>
-            <span>{firstSet[2]}</span>
-            <span>{firstSet[3]}</span>
+            <span className='upanimation'>
+              {firstSet[0] ? firstSet[0] : '#'}
+            </span>
+            <span>{firstSet[1] ? firstSet[1] : '#'}</span>
+            <span>{firstSet[2] ? firstSet[2] : '#'}</span>
+            <span>{firstSet[3] ? firstSet[3] : '#'}</span>
           </div>
           <div>
-            <span>{secondSet[0]}</span>
-            <span>{secondSet[1]}</span>
-            <span>{secondSet[2]}</span>
-            <span>{secondSet[3]}</span>
+            <span>{secondSet[0] ? '*' : '#'}</span>
+            <span>{secondSet[1] ? '*' : '#'}</span>
+            <span>{secondSet[2] ? '*' : '#'}</span>
+            <span>{secondSet[3] ? '*' : '#'}</span>
           </div>
           <div>
-            <span>{thridSet[0]}</span>
-            <span>{thridSet[1]}</span>
-            <span>{thridSet[2]}</span>
-            <span>{thridSet[3]}</span>
+            <span>{checkInputSecure(thirdSet[0])}</span>
+
+            <span>{thirdSet[1] === '#' || ' ' ? '#' : '*'}</span>
+            <span>{thirdSet[2] === '#' || ' ' ? '#' : '*'}</span>
+            <span>{thirdSet[3] === '#' || ' ' ? '#' : '*'}</span>
           </div>
           <div>
-            <span>{fourthSet[0]}</span>
-            <span>{fourthSet[1]}</span>
-            <span>{fourthSet[2]}</span>
-            <span>{fourthSet[3]}</span>
+            <span>{fourthSet[0] ? fourthSet[0] : '#'}</span>
+            <span>{fourthSet[1] ? fourthSet[0] : '#'}</span>
+            <span>{fourthSet[2] ? fourthSet[0] : '#'}</span>
+            <span>{fourthSet[3] ? fourthSet[0] : '#'}</span>
           </div>
         </div>
         <div className='nameContainer'>
