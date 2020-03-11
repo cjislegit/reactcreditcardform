@@ -23,6 +23,12 @@ const CreditCard = () => {
     }
   };
 
+  let upAnimation = null;
+
+  const addAnimation = () => {
+    upAnimation = 'upanimation';
+  };
+
   return (
     <div className='creditCardContainer'>
       <div className='creditCard'>
@@ -30,7 +36,7 @@ const CreditCard = () => {
         <div className='logoContainer'></div>
         <div className='numContainer'>
           <div>
-            <span className='upanimation'>
+            <span onChange={addAnimation} className={upAnimation}>
               {firstSet[0] ? firstSet[0] : '#'}
             </span>
             <span>{firstSet[1] ? firstSet[1] : '#'}</span>
