@@ -38,17 +38,16 @@ const CreditCard = () => {
             <span>{firstSet[3] ? firstSet[3] : '#'}</span>
           </div>
           <div>
-            <span>{secondSet[0] ? '*' : '#'}</span>
-            <span>{secondSet[1] ? '*' : '#'}</span>
-            <span>{secondSet[2] ? '*' : '#'}</span>
-            <span>{secondSet[3] ? '*' : '#'}</span>
+            <span>{checkInputSecure(secondSet[0])}</span>
+            <span>{checkInputSecure(secondSet[1])}</span>
+            <span>{checkInputSecure(secondSet[2])}</span>
+            <span>{checkInputSecure(secondSet[3])}</span>
           </div>
           <div>
             <span>{checkInputSecure(thirdSet[0])}</span>
-
-            <span>{thirdSet[1] === '#' || ' ' ? '#' : '*'}</span>
-            <span>{thirdSet[2] === '#' || ' ' ? '#' : '*'}</span>
-            <span>{thirdSet[3] === '#' || ' ' ? '#' : '*'}</span>
+            <span>{checkInputSecure(thirdSet[1])}</span>
+            <span>{checkInputSecure(thirdSet[2])}</span>
+            <span>{checkInputSecure(thirdSet[3])}</span>
           </div>
           <div>
             <span>{fourthSet[0] ? fourthSet[0] : '#'}</span>
