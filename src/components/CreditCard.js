@@ -23,12 +23,6 @@ const CreditCard = () => {
     }
   };
 
-  let upAnimation = null;
-
-  const addAnimation = () => {
-    upAnimation = 'upanimation';
-  };
-
   return (
     <div className='creditCardContainer'>
       <div className='creditCard'>
@@ -36,12 +30,10 @@ const CreditCard = () => {
         <div className='logoContainer'></div>
         <div className='numContainer'>
           <div>
-            <span onChange={addAnimation} className={upAnimation}>
-              {firstSet[0] ? firstSet[0] : '#'}
-            </span>
-            <span>{firstSet[1] ? firstSet[1] : '#'}</span>
-            <span>{firstSet[2] ? firstSet[2] : '#'}</span>
-            <span>{firstSet[3] ? firstSet[3] : '#'}</span>
+            <span className='num1'>{firstSet[0] ? firstSet[0] : '#'}</span>
+            <span className='num2'>{firstSet[1] ? firstSet[1] : '#'}</span>
+            <span className='num3'>{firstSet[2] ? firstSet[2] : '#'}</span>
+            <span className='num4'>{firstSet[3] ? firstSet[3] : '#'}</span>
           </div>
           <div>
             <span>{checkInputSecure(secondSet[0])}</span>

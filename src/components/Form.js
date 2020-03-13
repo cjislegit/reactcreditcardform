@@ -3,6 +3,7 @@ import { CreditCardContext } from '../context/CreditCardContext';
 
 const Form = () => {
   const { handleChange } = useContext(CreditCardContext);
+
   return (
     <div className='formContainer'>
       <form>

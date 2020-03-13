@@ -12,11 +12,18 @@ const CreditCardContextProvider = props => {
   });
 
   const handleChange = e => {
+    addAnimation();
     const name = e.target.id;
     const value = e.target.value;
     const newState = { ...creditCardInfo };
     newState[name] = value;
-    setCreditCardInfo(newState);
+    setTimeout(setCreditCardInfo(newState), 50000);
+  };
+
+  const addAnimation = () => {
+    let num = `num${document.querySelector('#cardNumber').value.length}`;
+    let c = document.querySelector(`.${num}`);
+    c.className = 'upanimation';
   };
 
   return (
