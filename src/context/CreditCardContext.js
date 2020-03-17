@@ -22,8 +22,11 @@ const CreditCardContextProvider = props => {
 
   const addAnimation = () => {
     let num = `num${document.querySelector('#cardNumber').value.length}`;
-    let c = document.querySelector(`.${num}`);
-    c.className = 'upanimation';
+    if (num !== 'num0') {
+      let c = document.querySelector(`.${num}`);
+      c.className = `${num} upanimation`;
+      setTimeout(() => (c.className = `${num}`), 500);
+    }
   };
 
   return (
