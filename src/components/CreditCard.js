@@ -36,22 +36,22 @@ const CreditCard = () => {
             <span className='num4'>{firstSet[3] ? firstSet[3] : '#'}</span>
           </div>
           <div>
-            <span>{checkInputSecure(secondSet[0])}</span>
-            <span>{checkInputSecure(secondSet[1])}</span>
-            <span>{checkInputSecure(secondSet[2])}</span>
-            <span>{checkInputSecure(secondSet[3])}</span>
+            <span className='num5'>{checkInputSecure(secondSet[0])}</span>
+            <span className='num6'>{checkInputSecure(secondSet[1])}</span>
+            <span className='num7'>{checkInputSecure(secondSet[2])}</span>
+            <span className='num8'>{checkInputSecure(secondSet[3])}</span>
           </div>
           <div>
-            <span>{checkInputSecure(thirdSet[0])}</span>
-            <span>{checkInputSecure(thirdSet[1])}</span>
-            <span>{checkInputSecure(thirdSet[2])}</span>
-            <span>{checkInputSecure(thirdSet[3])}</span>
+            <span className='num9'>{checkInputSecure(thirdSet[0])}</span>
+            <span className='num10'>{checkInputSecure(thirdSet[1])}</span>
+            <span className='num11'>{checkInputSecure(thirdSet[2])}</span>
+            <span className='num12'>{checkInputSecure(thirdSet[3])}</span>
           </div>
           <div>
-            <span>{fourthSet[0] ? fourthSet[0] : '#'}</span>
-            <span>{fourthSet[1] ? fourthSet[0] : '#'}</span>
-            <span>{fourthSet[2] ? fourthSet[0] : '#'}</span>
-            <span>{fourthSet[3] ? fourthSet[0] : '#'}</span>
+            <span className='num13'>{fourthSet[0] ? fourthSet[0] : '#'}</span>
+            <span className='num14'>{fourthSet[1] ? fourthSet[0] : '#'}</span>
+            <span className='num15'>{fourthSet[2] ? fourthSet[0] : '#'}</span>
+            <span className='num16'>{fourthSet[3] ? fourthSet[0] : '#'}</span>
           </div>
         </div>
         <div className='nameContainer'>
