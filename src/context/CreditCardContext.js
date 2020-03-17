@@ -17,7 +17,7 @@ const CreditCardContextProvider = props => {
     const value = e.target.value;
     const newState = { ...creditCardInfo };
     newState[name] = value;
-    setTimeout(setCreditCardInfo(newState), 50000);
+    setTimeout(() => setCreditCardInfo(newState), 130);
   };
 
   const addAnimation = () => {
